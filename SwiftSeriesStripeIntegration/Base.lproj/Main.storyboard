@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6wN-eR-qBM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VC" id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSeriesStripeIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNI-yu-9Nd">
+                                <rect key="frame" x="128.5" y="433" width="157" height="30"/>
+                                <state key="normal" title="Select Payment Option"/>
+                                <connections>
+                                    <action selector="clickedSelectPaymentOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0S-2K-72v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koc-ko-Il0">
+                                <rect key="frame" x="177" y="483" width="60" height="30"/>
+                                <state key="normal" title="Pay Now"/>
+                                <connections>
+                                    <action selector="clickedBtnPayNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D99-wZ-7FX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mNI-yu-9Nd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ND0-Ux-J0r"/>
+                            <constraint firstItem="koc-ko-Il0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R8O-AH-M7g"/>
+                            <constraint firstItem="koc-ko-Il0" firstAttribute="top" secondItem="mNI-yu-9Nd" secondAttribute="bottom" constant="20" id="dEv-w6-aYR"/>
+                            <constraint firstItem="mNI-yu-9Nd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rTY-7N-C3v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kda-KZ-Gx7"/>
+                    <connections>
+                        <outlet property="btnSelectPaymentOption" destination="mNI-yu-9Nd" id="1lT-Hu-jNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499" y="29"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="xCb-N7-I33">
+            <objects>
+                <viewController storyboardIdentifier="VC1" id="6gJ-4e-zXX" customClass="ViewController1" customModule="SwiftSeriesStripeIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGz-of-CU4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ta-G6-LWJ">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickedBtnCLicked1:" destination="6gJ-4e-zXX" eventType="touchUpInside" id="cLT-9b-eKK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ta-G6-LWJ" firstAttribute="centerX" secondItem="CGz-of-CU4" secondAttribute="centerX" id="UXY-G8-pEW"/>
+                            <constraint firstItem="6Ta-G6-LWJ" firstAttribute="centerY" secondItem="CGz-of-CU4" secondAttribute="centerY" id="cU2-BI-Lbj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MKx-hW-Lfb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jw9-O3-PS2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMa-jz-yMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2338" y="70"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="39d-TR-x5c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6wN-eR-qBM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Kg-dY-sMp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6gJ-4e-zXX" kind="relationship" relationship="rootViewController" id="rjb-pD-xIZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6x-Hp-PIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="70"/>
+        </scene>
+    </scenes>
+</document>
